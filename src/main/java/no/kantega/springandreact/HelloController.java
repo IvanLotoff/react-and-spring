@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Date;
 
 @RestController
+@CrossOrigin(origins = "*")
 public class HelloController {
     @GetMapping("/api/hello")
     public String hello() {
